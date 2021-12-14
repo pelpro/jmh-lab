@@ -9,7 +9,6 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import ru.sberbank.jmh.dto.FullDTO;
-import ru.sberbank.jmh.serialisators.DtoSerializator;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -49,7 +48,7 @@ public class DtoDeserialisator {
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(DtoSerializator.class.getSimpleName())
+                .include(DtoDeserialisator.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(10)
                 .forks(1)

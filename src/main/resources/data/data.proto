@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package ru.sberbank.jmh;
+
+option java_outer_classname = "ProtoDTO";
+
+message Full {
+
+  message Part {
+    required string partName = 1;
+    required double partSize = 2;
+    repeated uint32 partList = 3;
+  }
+
+  required string fullName = 1;
+  required uint32 fullSize = 2;
+  repeated double fullList = 3;
+  required Part part = 4;
+}

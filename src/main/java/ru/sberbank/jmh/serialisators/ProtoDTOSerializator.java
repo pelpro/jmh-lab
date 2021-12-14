@@ -1,7 +1,6 @@
 package ru.sberbank.jmh.serialisators;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.googlecode.protobuf.format.XmlFormat;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
@@ -9,34 +8,34 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-import ru.sberbank.jmh.dto.FullDTO;
+import ru.sberbank.jmh.deserialisators.ProtoDTODeserialisator;
+import ru.sberbank.jmh.dto.ProtoDTO;
 
 public class ProtoDTOSerializator {
 
-    private final static FullDTO fullDTO = new FullDTO();
-    private final static ObjectMapper objectMapper = new ObjectMapper();
+    private final static ProtoDTO.Full dto = ProtoDTODeserialisator.full;
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
-    public void serializationAvgTime() throws JsonProcessingException {
-        objectMapper.writeValueAsString(fullDTO);
+    public void serializationAvgTime() {
+        XmlFormat.printToString(dto);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
-    public void serializationThroughput() throws JsonProcessingException {
-        objectMapper.writeValueAsString(fullDTO);
+    public void serializationThroughput() {
+        XmlFormat.printToString(dto);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.SampleTime)
-    public void serializationSampleTime() throws JsonProcessingException {
-        objectMapper.writeValueAsString(fullDTO);
+    public void serializationSampleTime() {
+        XmlFormat.printToString(dto);
     }
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(DtoSerializator.class.getSimpleName())
+                .include(ProtoDTOSerializator.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(10)
                 .forks(1)

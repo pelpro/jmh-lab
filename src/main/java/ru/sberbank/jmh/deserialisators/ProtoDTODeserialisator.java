@@ -9,46 +9,51 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import ru.sberbank.jmh.dto.FullDTO;
-import ru.sberbank.jmh.serialisators.DtoSerializator;
+import ru.sberbank.jmh.dto.ProtoDTO;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ProtoDTODeserialisator {
-    private static ObjectMapper objectMapper = new ObjectMapper();
+    private final static ProtoDTO.Full.Part part = ProtoDTO.Full.Part.newBuilder().
+            setPartName("").
+            setPartSize(12.5).
+            addAllPartList(new ArrayList<>(Arrays.asList(1, 2, 3, 4))).
+            build();
 
-    private static byte[] data;
+    public final static ProtoDTO.Full full = ProtoDTO.Full.newBuilder().
+            setFullName("").
+            setFullSize(120).
+            addAllFullList(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0))).
+            setPart(part).
+            build();
 
-    static {
-        try {
-            data = Files.readAllBytes(Paths.get("src/main/resources/data/data.json"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    private final static byte[] data = full.toByteArray();
+
+    private final static ObjectMapper objectMapper = new ObjectMapper();
 
     @Benchmark
     @BenchmarkMode(Mode.AverageTime)
     public void deserializationAvgTime() throws IOException {
-        objectMapper.readValue(data, FullDTO.class);
+        ProtoDTO.Full.parseFrom(data);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     public void deserializationThroughput() throws IOException {
-        objectMapper.readValue(data, FullDTO.class);
+        ProtoDTO.Full.parseFrom(data);
     }
 
     @Benchmark
     @BenchmarkMode(Mode.SampleTime)
     public void deserializationSampleTime() throws IOException {
-        objectMapper.readValue(data, FullDTO.class);
+        ProtoDTO.Full.parseFrom(data);
     }
 
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(DtoSerializator.class.getSimpleName())
+                .include(ProtoDTODeserialisator.class.getSimpleName())
                 .warmupIterations(5)
                 .measurementIterations(10)
                 .forks(1)

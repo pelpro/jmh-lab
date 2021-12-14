@@ -1,1 +1,248 @@
-t
+C:\Users\Андрей\.jdks\corretto-1.8.0_312\bin\java.exe "-javaagent:D:\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=51588:D:\IntelliJ IDEA Community Edition 2021.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\charsets.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\access-bridge-64.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\cldrdata.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\dnsns.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\jaccess.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\jfxrt.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\localedata.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\nashorn.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\sunec.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\sunjce_provider.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\sunmscapi.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\sunpkcs11.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\ext\zipfs.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\jce.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\jfr.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\jfxswt.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\jsse.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\management-agent.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\resources.jar;C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\lib\rt.jar;C:\Users\Андрей\Git\jmh-lab\target\classes;C:\Users\Андрей\.m2\repository\com\googlecode\protobuf-java-format\protobuf-java-format\1.2\protobuf-java-format-1.2.jar;C:\Users\Андрей\.m2\repository\com\google\protobuf\protobuf-java\3.19.1\protobuf-java-3.19.1.jar;C:\Users\Андрей\.m2\repository\com\google\protobuf\protobuf-java-util\3.19.1\protobuf-java-util-3.19.1.jar;C:\Users\Андрей\.m2\repository\com\google\guava\guava\30.1.1-android\guava-30.1.1-android.jar;C:\Users\Андрей\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Андрей\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Андрей\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Андрей\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\Андрей\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Андрей\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Андрей\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Андрей\.m2\repository\org\openjdk\jmh\jmh-core\1.33\jmh-core-1.33.jar;C:\Users\Андрей\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\Андрей\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\Андрей\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.33\jmh-generator-annprocess-1.33.jar;C:\Users\Андрей\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;C:\Users\Андрей\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;C:\Users\Андрей\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar ru.sberbank.jmh.serialisators.ProtoDTOSerializator
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\bin\java.exe
+# VM options: -javaagent:D:\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=51588:D:\IntelliJ IDEA Community Edition 2021.3\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationThroughput
+
+# Run progress: 0,00% complete, ETA 00:07:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 632576,649 ops/s
+# Warmup Iteration   2: 661737,662 ops/s
+# Warmup Iteration   3: 661670,611 ops/s
+# Warmup Iteration   4: 661626,822 ops/s
+# Warmup Iteration   5: 660629,787 ops/s
+Iteration   1: 656846,421 ops/s
+Iteration   2: 645230,492 ops/s
+Iteration   3: 648731,428 ops/s
+Iteration   4: 656683,371 ops/s
+Iteration   5: 659656,891 ops/s
+Iteration   6: 659343,304 ops/s
+Iteration   7: 658572,999 ops/s
+Iteration   8: 659849,200 ops/s
+Iteration   9: 658928,348 ops/s
+Iteration  10: 658722,351 ops/s
+
+
+Result "ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationThroughput":
+  656256,481 ±(99.9%) 7664,612 ops/s [Average]
+  (min, avg, max) = (645230,492, 656256,481, 659849,200), stdev = 5069,667
+  CI (99.9%): [648591,868, 663921,093] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\bin\java.exe
+# VM options: -javaagent:D:\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=51588:D:\IntelliJ IDEA Community Edition 2021.3\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationAvgTime
+
+# Run progress: 33,33% complete, ETA 00:05:02
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationAvgTime":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: C:\Users\Андрей\.jdks\corretto-1.8.0_312\jre\bin\java.exe
+# VM options: -javaagent:D:\IntelliJ IDEA Community Edition 2021.3\lib\idea_rt.jar=51588:D:\IntelliJ IDEA Community Edition 2021.3\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationSampleTime
+
+# Run progress: 66,67% complete, ETA 00:02:31
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   2: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   3: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   4: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   5: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: 0,001 s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   6: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   7: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   8: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration   9: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+Iteration  10: ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.00:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.50:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.90:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.95:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.99:   ≈ 10⁻⁶ s/op
+                 serializationSampleTime·p0.999:  ≈ 10⁻⁵ s/op
+                 serializationSampleTime·p0.9999: ≈ 10⁻⁴ s/op
+                 serializationSampleTime·p1.00:   0,001 s/op
+
+
+
+Result "ru.sberbank.jmh.serialisators.ProtoDTOSerializator.serializationSampleTime":
+  N = 2074399
+  mean =     ≈ 10⁻⁶ ±(99.9%) 0,001 s/op
+
+  Histogram, s/op:
+    [0,000, 0,000) = 2074199
+    [0,000, 0,000) = 18
+    [0,000, 0,000) = 0
+    [0,000, 0,001) = 7
+    [0,001, 0,001) = 18
+    [0,001, 0,001) = 19
+    [0,001, 0,001) = 37
+    [0,001, 0,001) = 49
+    [0,001, 0,001) = 27
+    [0,001, 0,001) = 19
+    [0,001, 0,001) = 5
+    [0,001, 0,002) = 1
+    [0,002, 0,002) = 0
+    [0,002, 0,002) = 0
+    [0,002, 0,002) = 0
+
+  Percentiles, s/op:
+      p(0,0000) =     ≈ 10⁻⁶ s/op
+     p(50,0000) =     ≈ 10⁻⁶ s/op
+     p(90,0000) =     ≈ 10⁻⁶ s/op
+     p(95,0000) =     ≈ 10⁻⁶ s/op
+     p(99,0000) =     ≈ 10⁻⁶ s/op
+     p(99,9000) =     ≈ 10⁻⁵ s/op
+     p(99,9900) =     ≈ 10⁻⁴ s/op
+     p(99,9990) =      0,001 s/op
+     p(99,9999) =      0,001 s/op
+    p(100,0000) =      0,001 s/op
+
+
+# Run complete. Total time: 00:07:33
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                       Mode      Cnt       Score      Error  Units
+ProtoDTOSerializator.serializationThroughput                                   thrpt       10  656256,481 ± 7664,612  ops/s
+ProtoDTOSerializator.serializationAvgTime                                       avgt       10      ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime                                  sample  2074399      ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.00    sample               ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.50    sample               ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.90    sample               ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.95    sample               ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.99    sample               ≈ 10⁻⁶              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.999   sample               ≈ 10⁻⁵              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p0.9999  sample               ≈ 10⁻⁴              s/op
+ProtoDTOSerializator.serializationSampleTime:serializationSampleTime·p1.00    sample                0,001              s/op
